@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">HandyMan</string>
+    <string name="signup_provider_text">Signup and let the world know about you</string>
+    <string name="prefered_font">san-serif</string>
+    <string name="provider_name_hint">Enter a name</string>
+    <string name="provider_service_hint">What\'s your service?</string>
+    <string name="provider_phone_hint">Phone number</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="address">Physical Address</string>
+    <string name="service_description">Describe your service</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_account">Create New Account</string>
+    <string name="signin">Signin</string>
+    <string name="email_hint">E-mail Adddress</string>
+    <string name="password_hint">Password</string>
+    <string name="show">show</string>
+    <string name="service_provider">I provide service</string>
+    <string name="map_api_key">AIzaSyAlaRjx9x_uKnxxAmR7vYzLIbxj-27XCg8</string>
+
+    <string-array name="services">
+        <item>Electrical Works</item>
+        <item>Mechanical Works</item>
+        <item>Plumbing</item>
+        <item>Gardening Works</item>
+        <item>Computer Works</item>
+        <item>Carpentry</item>
+        <item>Barber/Hair Dresser</item>
+        <item>BBQ Service</item>
+    </string-array>
 </resources>

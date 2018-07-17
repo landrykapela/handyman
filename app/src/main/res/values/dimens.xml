@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_margin">20dp</dimen>
+    <dimen name="padding_edit_text">4dp</dimen>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="edit_text_margin">@dimen/standard_margin</dimen>
+    <dimen name="button_width">96dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="button_width_wide">220dp</dimen>
+    <dimen name="button_height_wide">48dp</dimen>
+    <dimen name="padding_text_button">8dp</dimen>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etServiceName"
+        android:layout_width="297dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/provider_name_hint"
+        android:inputType="textPersonName|textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvServiceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/provider_service_hint"
+        app:layout_constraintStart_toStartOf="@+id/etServiceName"
+        app:layout_constraintTop_toBottomOf="@+id/etServiceName" />
+
+    <Spinner
+        android:id="@+id/spService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvServiceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvServiceLabel" />
+
+    <EditText
+        android:id="@+id/etServiceDescription"
+        android:layout_width="299dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/service_description"
+        android:inputType="textPersonName"
+        android:maxLines="10"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/etServiceName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spService"
+        app:layout_constraintTop_toBottomOf="@+id/spService" />
+
+    <TextView
+        android:id="@+id/tvLabelAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/address"
+        app:layout_constraintStart_toStartOf="@+id/tvServiceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/etServiceDescription" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/etServiceDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvLabelAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelAddress" />
+
+    <Button
+        android:id="@+id/btnServiceSave"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toStartOf="@+id/mapView"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+    <Button
+        android:id="@+id/btnServiceCancel"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:background="@drawable/button_background_accent"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnServiceSave"
+        app:layout_constraintEnd_toEndOf="@+id/mapView"
+        app:layout_constraintTop_toBottomOf="@+id/mapView"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
